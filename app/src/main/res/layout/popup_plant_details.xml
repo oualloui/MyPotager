@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="500dp"
+    android:padding="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/image_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pomme" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/popup_plant_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pop_up_plant_name"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintStart_toEndOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        style="@style/TitleTextStyle"
+        android:layout_marginLeft="@dimen/default_margin"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_action_close"
+        android:layout_marginRight="@dimen/default_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pop_up_plant_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pop_up_plant_description"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView"
+        android:layout_marginTop="@dimen/default_margin"
+        style="@style/TitleTextStyle"
+        />
+
+    <TextView
+        android:id="@+id/pop_up_plant_description_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pop_up_plant_description_subtitle"
+        style="@style/DefaultTextStyle"
+        app:layout_constraintStart_toStartOf="@+id/pop_up_plant_description"
+        app:layout_constraintTop_toBottomOf="@+id/pop_up_plant_description" />
+
+
+    <TextView
+        android:id="@+id/pop_up_plant_grow_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pop_up_plant_grow_title"
+        style="@style/TitleTextStyle"
+        android:layout_marginTop="@dimen/default_margin"
+        app:layout_constraintStart_toStartOf="@+id/pop_up_plant_description_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/pop_up_plant_description_subtitle" />
+
+    <TextView
+        android:id="@+id/pop_up_plant_grow_subtitle"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pop_up_plant_grow_subtitle"
+
+
+        app:layout_constraintStart_toStartOf="@+id/pop_up_plant_grow_title"
+        app:layout_constraintTop_toBottomOf="@+id/pop_up_plant_grow_title" />
+
+    <TextView
+        android:id="@+id/pop_up_plant_water_title"
+        style="@style/TitleTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:text="@string/pop_up_plant_water_title"
+        app:layout_constraintStart_toStartOf="@+id/pop_up_plant_description_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/pop_up_plant_grow_subtitle" />
+
+
+    <TextView
+        android:id="@+id/pop_up_plant_water_subtitle"
+        style="@style/DefaultTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pop_up_plant_water_subtitle"
+
+
+        app:layout_constraintStart_toStartOf="@+id/pop_up_plant_water_title"
+        app:layout_constraintTop_toBottomOf="@+id/pop_up_plant_water_title" />
+
+    <View
+        android:id="@+id/view_separation"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop_up_plant_water_subtitle"
+        android:layout_marginTop="50dp"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/delete_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_action_delete"
+        android:layout_marginRight="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintEnd_toStartOf="@+id/view_separation"
+        app:layout_constraintTop_toTopOf="@+id/view_separation" />
+
+    <ImageView
+        android:id="@+id/unlike_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_action_unlike"
+        android:layout_marginLeft="50dp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/view_separation"
+        app:layout_constraintStart_toStartOf="@+id/view_separation"
+        app:layout_constraintTop_toTopOf="@+id/view_separation"
+
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

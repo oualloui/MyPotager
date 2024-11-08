@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MyPotager</string>
+    <!--  Page d'accueil  -->
+    <string name="home_page_title">Plantes ajoutables</string>
+    <string name="home_page_last_plant_section">Dernieres plantes</string>
+    <!--  Plante customisé  -->
+    <string name="collection_page_title">Ma collection</string>
+    <string-array name="add_plant_page_grow_spinner_input">
+        <item>Croissance : Lente</item>
+        <item>Croissance : Moyenne</item>
+        <item>Croissance : Forte</item>
+    </string-array>
+    <string-array name="add_plant_page_water_spinner_input">
+        <item>Consommation : Faible</item>
+        <item>Consommation : Moyenne</item>
+        <item>Consommation : Elevée</item>
+    </string-array>
+    <string name="add_plant_page_confirm_button">Confirmer</string>
+    <!--  Fenetre Pop up de details  -->
+    <string name="pop_up_plant_name">Plant name</string>
+    <string name="pop_up_plant_description">Description</string>
+    <string name="pop_up_plant_description_subtitle">Petite Description</string>
+    <string name="pop_up_plant_grow_title">Croissance</string>
+    <string name="pop_up_plant_grow_subtitle">Lente</string>
+    <string name="pop_up_plant_water_title">Consommation d\'eau</string>
+    <string name="pop_up_plant_water_subtitle">Faible</string>
+    <!--  Ajout plante  -->
+    <string name="add_plant_page_title">Ajout d\'une plante</string>
+    <string name="add_plant_page_upload_button">Charger image</string>
+    <string name="add_plant_page_name_input">@string/item_plant_name</string>
+    <string name="add_plant_page_description_input">@string/item_plant_description</string>
+    <!--  Plante collection  -->
+    <string name="item_plant_name">Nom de la plante</string>
+    <string name="item_plant_description">Description de la plante</string>
+    
+    <string name="bottom_home_item">Accueil</string>
+    <string name="bottom_add_plant_item">Plantes favorites</string>
+</resources>

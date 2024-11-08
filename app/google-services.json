@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "19161981938",
+    "project_id": "mypotager-e7245",
+    "storage_bucket": "mypotager-e7245.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19161981938:android:bfacf9f3d7beeaad6b816b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaUlwgDhppCud8kX3fWLe8TObdrp6LJz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
